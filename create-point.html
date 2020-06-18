@@ -45,10 +45,28 @@
           </div>
 
           <div class="field">
-            <label for="number">Número</label>
-            <input type="number" name="number">
+            <label for="address2">Número/Complemento</label>
+            <input type="number" name="address2">
           </div>
         </div>
+
+        <div class="field-group">
+          <div class="field">
+            <label for="state">Estado</label>
+            <select name="uf">
+              <option value="">Selecione o Estado</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="city">Cidade</label>
+            <select name="city" disabled>
+              <option value="">Selecione a Cidade</option>
+            </select>
+          </div>
+        </div>
+
+        <button>Cadastrar ponto de coleta</button>
       </fieldset>
     </form>
 
