@@ -30,6 +30,7 @@ function getCities(event) {
   fetch(url)
     .then(res => res.json())
     .then(cities => {
+      citySelect.innerHTML = "";
 
       for (const city of cities) {
         citySelect.innerHTML += `<option value="${city.id}">${city.nome}</option>`;
