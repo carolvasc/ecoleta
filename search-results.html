@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device=width, initial-scale=1.0">
   <title>Ecoleta</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="/styles/main.css">
   <link rel="stylesheet" href="/styles/search-results.css">
@@ -15,106 +15,51 @@
 </head>
 
 <body>
-  <div id="page-create-point">
+  <div id="page-search-results">
 
     <header>
       <img src="/assets/logo.svg" alt="logo">
-      <a href="https://google.com.br">
+      <a href="/index.html">
         <span></span>
-        Resultado da pesquisa
+        Voltar para home
       </a>
     </header>
 
-    <form action="">
-      <h1>Cadastro do ponto de coleta</h1>
+    <main>
+      <h4>
+        <strong>2 pontos</strong> encontrados
+      </h4>
 
-      <fieldset>
-        <legend>
-          <h2>Dados da entidade</h2>
-        </legend>
+      <div class="cards">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1528323273322-d81458248d40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2001&q=80" alt="Colectoria">
 
-        <div class="field">
-          <label for="name">Nome da entidade</label>
-          <input type="text" name="name">
+          <h1>Colectoria</h1>
+          <h3>Resíduos Eletrônicos, Lâmpadas</h3>
+
+          <p>
+            Rio do Sul, Santa Catarina <br />
+            Gulherme Gemballa, Jardim América <br />
+            Nº 260
+          </p>
         </div>
 
-        <div class="field-group">
-          <div class="field">
-            <label for="address">Endereço</label>
-            <input type="text" name="address">
-          </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1567393528677-d6adae7d4a0a?ixlib=1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="Papersider">
 
-          <div class="field">
-            <label for="address2">Número/Complemento</label>
-            <input type="number" name="address2">
-          </div>
+          <h1>Papersider</h1>
+          <h3>Papeis e Papelão</h3>
+
+          <p>
+            Rio do Sul, Santa Catarina <br />
+            Gulherme Gemballa, Jardim América <br />
+            Nº 260
+          </p>
         </div>
-
-        <div class="field-group">
-          <div class="field">
-            <label for="state">Estado</label>
-            <select name="uf" required>
-              <option value="">Selecione o Estado</option>
-            </select>
-
-            <input type="hidden" name="state">
-          </div>
-
-          <div class="field">
-            <label for="city">Cidade</label>
-            <select name="city" disabled required>
-              <option value="">Selecione a Cidade</option>
-            </select>
-          </div>
-        </div>
-      </fieldset>
-
-      <fieldset>
-        <legend>
-          <h2>Itens de coleta</h2>
-        </legend>
-
-        <div class="items-grid">
-          <li data-id="1">
-            <img src="/assets/lampadas.svg" alt="Lâmpadas">
-            <span>Lâmpadas</span>
-          </li>
-
-          <li data-id="2">
-            <img src="/assets/baterias.svg" alt="Baterias">
-            <span>Baterias</span>
-          </li>
-
-          <li data-id="3">
-            <img src="/assets/papeis-papelao.svg" alt="Papeis e Papelão">
-            <span>Papeis e Papelão</span>
-          </li>
-
-          <li data-id="4">
-            <img src="/assets/eletronicos.svg" alt="Resíduos Eletrônicos">
-            <span>Resíduos Eletrônicos</span>
-          </li>
-
-          <li data-id="5">
-            <img src="/assets/organicos.svg" alt="Resíduos Orgânicos">
-            <span>Resíduos Orgânicos</span>
-          </li>
-
-          <li data-id="6">
-            <img src="/assets/oleo.svg" alt="Óleo de Cozinha">
-            <span>Óleo de Cozinha</span>
-          </li>
-        </div>
-
-        <input type="hidden" name="items">
-      </fieldset>
-
-      <button>Cadastrar ponto de coleta</button>
-    </form>
+      </div>
+    </main>
 
   </div>
-
-  <script src="scripts/create-point.js"></script>
 
 </body>
 
